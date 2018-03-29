@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  AMLoginSingup
-//
-//  Created by amir on 10/11/16.
-//  Copyright © 2016 amirs.eu. All rights reserved.
-//
+
 
 import UIKit
 
@@ -58,6 +52,7 @@ class ViewController: UIViewController {
     //MARK: - input views
     @IBOutlet weak var loginEmailInputView: AMInputView!
     @IBOutlet weak var loginPasswordInputView: AMInputView!
+    @IBOutlet weak var loginAcessCodeInputView: AMInputView!
     @IBOutlet weak var signupEmailInputView: AMInputView!
     @IBOutlet weak var signupPasswordInputView: AMInputView!
     @IBOutlet weak var signupPasswordConfirmInputView: AMInputView!
@@ -90,7 +85,7 @@ class ViewController: UIViewController {
         }else{
         
             //TODO: login by this data
-            NSLog("Email:\(loginEmailInputView.textFieldView.text) Password:\(loginPasswordInputView.textFieldView.text)")
+            NSLog("Email:\(loginEmailInputView.textFieldView.text) Password:\(loginPasswordInputView.textFieldView.text) AcessCode:\(loginAcessCodeInputView.textFieldView.text)")
         }
     }
     
